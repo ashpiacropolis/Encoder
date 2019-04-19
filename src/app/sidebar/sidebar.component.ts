@@ -7,13 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  title:string="FPS";
-  show_dropdown=function()
-  {
-    this.title="Ashpi";
-  }
-
-
   constructor() { }
 
   ngOnInit() {

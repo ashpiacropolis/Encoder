@@ -1,0 +1,26 @@
+.set_pos2 {
+    text-align: right;
+}
+.copyright-container {
+    bottom: -15px;
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    z-index: 3;
+    background-color: #252525;
+    padding: 3px 0px 6px 0px;
+
+}
+.para_color p {
+    color: #fff;
+    font-size: 14px;
+}
+.set_positiion{
+    text-align: center;
+}
+.heart{
+    color: red;
+}
+.para_color a{
+    color: #fff;
+}

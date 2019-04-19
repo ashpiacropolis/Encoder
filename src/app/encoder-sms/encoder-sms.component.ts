@@ -11,7 +11,7 @@ export class EncoderSmsComponent implements OnInit {
   constructor(private router: Router){
   }
 
-  public onEncodersmsClick(){
+  public onencoder_smsClick(){
       this.router.navigate(['./editsms']);
   }
 

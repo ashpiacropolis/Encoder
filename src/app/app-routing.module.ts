@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { FormsComponent } from './forms/forms.component';
 import { MenuComponent } from './menu/menu.component';
 import { AddapplicantsComponent } from './addapplicants/addapplicants.component';
@@ -11,65 +11,90 @@ import { EditprofileComponent } from './editprofile/editprofile.component';
 import { Routes, RouterModule } from '@angular/router';
 import { PremedDetailsComponent } from './premed-details/premed-details.component';
 import { EditSmsComponent } from './edit-sms/edit-sms.component';
-import { FindapplicantComponent } from './findapplicant/findapplicant.component';
 import { MatchesfoundComponent } from './matchesfound/matchesfound.component';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { ApplicantsContainerComponent } from './applicants-container/applicants-container.component';
+
+
 
 const routes: Routes = [
-  {
-    path: 'Home',
-    component: FormsComponent
-},
-{
-path: 'Forms',
-component: FormsComponent
-},
-{
-  path: 'All_Applicants',
-  component: MenuComponent
-},
 
-{
-  path: 'Add_Applicants',
-  component: AddapplicantsComponent
-},
-{
-  path: 'All_Agents',
-  component: AllagentsComponent
-},
-{
-path: 'Add_Agents',
-component: AddagentsComponent
-},
+  {
+    path: '',
+    component: LoginComponent
+  },
 
-{
-path: 'Pre_med',
-component: PremedComponent
-},
-{
-  path: 'Non_premed',
-  component: NonPremedComponent
-  },
-  
   {
-  path: 'encodersms',
-  component: EncoderSmsComponent
-  },
-  {
-    path: 'editprofile',
-    component: EditprofileComponent
-  },
-  {
-    path: 'premeddetails',
-    component: PremedDetailsComponent
-  },
-  {
-    path: 'editsms',
-    component: EditSmsComponent
-  },
-  {
-    path: 'matches',
-    component: MatchesfoundComponent
-  }
+    path: 'home',
+    component: HomeComponent,
+    children:[
+
+      {
+        path:'',
+        component:FormsComponent,
+      },
+      {
+        path:'forms',
+        component:FormsComponent,
+      },
+      {
+        path:'All_Applicants',
+        component: MenuComponent
+      },
+      {
+        path: 'Add_Applicants',
+        component: AddapplicantsComponent,
+        children:[
+          {
+              path: '',
+              component: ApplicantsContainerComponent
+          },
+          {
+            path: 'matches',
+            component: MatchesfoundComponent
+          },
+        ]
+      },
+      {
+        path:'editprofile',
+        component: EditprofileComponent
+      },          
+      {
+         path: 'Add_Agents',
+        component: AddagentsComponent
+      },
+     {
+       path: 'All_Agents',
+       component: AllagentsComponent
+     },
+     {
+      path: 'changepassword',
+      component: ChangepasswordComponent
+    },
+    {
+      path: 'encodersms',
+      component: EncoderSmsComponent
+    },
+    {
+      path: 'editsms',
+      component: EditSmsComponent
+    },
+    {
+      path: 'Non_premed',
+      component: NonPremedComponent
+      },
+      {
+        path:'Pre_med',
+        component: PremedComponent
+      },
+      {
+        path: 'premeddetails',
+        component: PremedDetailsComponent
+      },     
+    ]
+  },   
 ];
 
 @NgModule({

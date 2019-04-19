@@ -20,11 +20,14 @@ import { PremedComponent } from './premed/premed.component';
 import { NonPremedComponent } from './non-premed/non-premed.component';
 import { EncoderSmsComponent } from './encoder-sms/encoder-sms.component';
 import { EditprofileComponent } from './editprofile/editprofile.component';
-import { FindapplicantComponent } from './findapplicant/findapplicant.component';
 import { MatchesfoundComponent } from './matchesfound/matchesfound.component';
 import { AgentprofileComponent } from './agentprofile/agentprofile.component';
 import { PremedDetailsComponent } from './premed-details/premed-details.component';
 import { EditSmsComponent } from './edit-sms/edit-sms.component';
+import { FooterComponent } from './footer/footer.component';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
+import { HomeComponent } from './home/home.component';
+import { ApplicantsContainerComponent } from './applicants-container/applicants-container.component';
 
 
 @NgModule({
@@ -45,11 +48,14 @@ import { EditSmsComponent } from './edit-sms/edit-sms.component';
     NonPremedComponent,
     EncoderSmsComponent,
     EditprofileComponent,
-    FindapplicantComponent,
     MatchesfoundComponent,
     AgentprofileComponent,
     PremedDetailsComponent,
-    EditSmsComponent
+    EditSmsComponent,
+    FooterComponent,
+    ChangepasswordComponent,
+    HomeComponent,
+    ApplicantsContainerComponent
   ],
   imports: [
     BrowserModule,

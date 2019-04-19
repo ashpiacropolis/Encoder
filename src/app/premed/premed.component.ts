@@ -25,12 +25,8 @@ export class PremedComponent implements OnInit {
   
         return (this.selectedLink === name); // if current radio button is selected, return true, else return false  
     } 
-    constructor(private router: Router){
-    }
-  
-    public onPremedClick(){
-        this.router.navigate(['./premeddetails']);
-    }
+    constructor(){
+    }    
 
   ngOnInit() {
   }

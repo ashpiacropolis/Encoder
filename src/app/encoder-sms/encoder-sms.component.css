@@ -15,7 +15,7 @@
 }
 .form-width{
     width: 50%;
-    border-bottom: 1ps solid #333;
+    border-bottom: 1px solid #333;
     box-shadow: none;
     border-top: none;
     border-right: none;

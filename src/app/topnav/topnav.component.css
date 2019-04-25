@@ -2,9 +2,12 @@
 .navbar{
     margin-bottom: 0px;
     border-radius: 0px;
+  
+
   }
 .navbar-nav{
  float: right;
+ padding-right: 10px;
 }
 .navbar-form{
   text-align: right;

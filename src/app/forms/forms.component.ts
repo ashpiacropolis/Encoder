@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forms',
@@ -9,13 +8,10 @@ import { Router } from '@angular/router';
 export class FormsComponent implements OnInit {
 
  
-  constructor(private router: Router){
+  constructor(){
   }
 
-  public onFormsClick(){
-      this.router.navigate(['./editprofile']);
-  }
-
+ 
   ngOnInit() {
      
   }

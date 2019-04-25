@@ -44,7 +44,8 @@
     width: 100%;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-left: 10px;
+
 }
 .sidebar_name {
     padding-top: 25px;
@@ -91,6 +92,8 @@
 .blank-space{
   height: 100%;
   background: #252525;
+  min-height: 100vh;
+  max-height: 100vh;
 }
 .dropdown-menu{
   padding: 0px 0px;

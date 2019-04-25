@@ -27,7 +27,11 @@ import { EditSmsComponent } from './edit-sms/edit-sms.component';
 import { FooterComponent } from './footer/footer.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import { HomeComponent } from './home/home.component';
-import { ApplicantsContainerComponent } from './applicants-container/applicants-container.component';
+import { ApplicantprofileComponent } from './applicantprofile/applicantprofile.component';
+import { ApplicantdetailsComponent } from './applicantdetails/applicantdetails.component';
+import { ApplicantPremedComponent } from './applicant-premed/applicant-premed.component';
+import { ApplicantPassportComponent } from './applicant-passport/applicant-passport.component';
+import { ApplicantContainerComponent } from './applicant-container/applicant-container.component';
 
 
 @NgModule({
@@ -55,7 +59,11 @@ import { ApplicantsContainerComponent } from './applicants-container/applicants-
     FooterComponent,
     ChangepasswordComponent,
     HomeComponent,
-    ApplicantsContainerComponent
+    ApplicantprofileComponent,
+    ApplicantdetailsComponent,
+    ApplicantPremedComponent,
+    ApplicantPassportComponent,
+    ApplicantContainerComponent
   ],
   imports: [
     BrowserModule,

@@ -15,14 +15,21 @@ import { MatchesfoundComponent } from './matchesfound/matchesfound.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { ApplicantsContainerComponent } from './applicants-container/applicants-container.component';
-
+import { ApplicantContainerComponent } from './applicant-container/applicant-container.component';
+import { ApplicantprofileComponent } from './applicantprofile/applicantprofile.component';
+import { ApplicantdetailsComponent } from './applicantdetails/applicantdetails.component';
+import { ApplicantPremedComponent } from './applicant-premed/applicant-premed.component';
+import { ApplicantPassportComponent } from './applicant-passport/applicant-passport.component';
 
 
 const routes: Routes = [
 
   {
     path: '',
+    component: LoginComponent
+  },
+  {
+    path: 'login',
     component: LoginComponent
   },
 
@@ -49,12 +56,40 @@ const routes: Routes = [
         children:[
           {
               path: '',
-              component: ApplicantsContainerComponent
+              component: ApplicantContainerComponent
           },
           {
             path: 'matches',
             component: MatchesfoundComponent
           },
+        ]
+      },
+      {
+        path: 'applicantprofile',
+        component: ApplicantprofileComponent,
+        children:[
+          {
+            path:'',
+            component: ApplicantdetailsComponent
+          },
+          {
+            path: 'applicantPremed',
+            component: ApplicantPremedComponent	
+          },
+          {
+            path: 'applicantdetails',
+            component: ApplicantdetailsComponent
+          },
+          {
+            path: 'applicantPremed',
+            component: ApplicantPremedComponent	
+          },
+          {
+            path: 'applicantPassport',
+            component: ApplicantPassportComponent
+          },
+
+  
         ]
       },
       {
